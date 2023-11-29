@@ -1,0 +1,72 @@
+body{
+    background-image: url("/img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+}
+
+body h1{
+    font-weight: bold;
+}
+
+body h2{
+    font-size: medium;
+}
+
+body a{
+    text-decoration: none;
+    color: black;
+    font-size: small;
+    border: 1px solid white;
+    width: 4rem;
+    height: 1.5rem;
+}
+
+body address{
+    font-size: x-small;
+}
+
+.diamond{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diamond > img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.lines{
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.lines2{
+    border-bottom: 1px solid white;
+}
+
+.lines3{
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.lines4{
+    border-top: 1px solid white;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
