@@ -1,8 +1,15 @@
-@import url(/css/_reset.scss);
-@import url(/css/_colori.scss);
-@import url(/css/_font.scss);
-@import url(/css/_spaziature.scss);
-@import url(/css/_bottoni.scss);
+.btn-primary {
+  background-color: #0e6cff;
+}
+
+.btn-secondary {
+  background-color: #ff8700;
+}
+
+.btn-info {
+  background-color: #4caf50;
+}
+
 .hero img[alt=laptop] {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

@@ -1,8 +1,7 @@
-@import url(/css/_reset.scss);
-@import url(/css/_colori.scss);
-@import url(/css/_font.scss);
-@import url(/css/_spaziature.scss);
-@import url(/css/_bottoni.scss);
+@import 'bottoni';
+@import 'colori';
+@import 'font';
+@import 'spaziature';
 @import 'mixins';
 @import 'animazioni';
 
