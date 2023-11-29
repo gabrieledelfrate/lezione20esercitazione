@@ -1,0 +1,32 @@
+@import url(/css/_reset.scss);
+@import url(/css/_colori.scss);
+@import url(/css/_font.scss);
+@import url(/css/_spaziature.scss);
+@import url(/css/_bottoni.scss);
+.hero img[alt=laptop] {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+}
+
+.grid .grid-item img {
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.hero, .grid {
+  animation: hero-fade-in 1s ease-in-out 0.5s;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+@keyframes hero-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=style.css.map */

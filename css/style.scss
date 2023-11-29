@@ -1,0 +1,23 @@
+@import url(/css/_reset.scss);
+@import url(/css/_colori.scss);
+@import url(/css/_font.scss);
+@import url(/css/_spaziature.scss);
+@import url(/css/_bottoni.scss);
+@import 'mixins';
+@import 'animazioni';
+
+.hero {
+    img[alt="laptop"] {
+      @include floating(10px, 0 4px 8px rgba(0, 0, 0, 0.1), 1px solid #eee);
+    }
+  }
+
+  .grid {
+    .grid-item img {
+      @include floating(8px, 0 2px 5px rgba(0, 0, 0, 0.1), none);
+    }
+  }
+
+  .hero, .grid {    
+    @include hero-animation(1s, -20px, 0, 0.5s, hero-fade-in);
+  }

@@ -1,0 +1,15 @@
+$colori-bottoni: ( 
+  (primary, #0e6cff),
+  (secondary, #ff8700),
+  (info, #4caf50)
+);
+
+@each $colore in $colori-bottoni {
+  $nome-colore: nth($colore, 1);
+  $valore-colore: nth($colore, 2);
+
+  .btn-#{$nome-colore} {
+    background-color: $valore-colore;
+    
+  }
+}

@@ -1,0 +1,16 @@
+@mixin hero-animation($duration, $start-point, $end-point, $delay, $name) {
+    animation: $name $duration ease-in-out $delay;
+    opacity: 0;
+    transform: translateY($start-point);
+    
+    @keyframes #{$name} {
+      0% {
+        opacity: 0;
+        transform: translateY($start-point);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY($end-point);
+      }
+    }
+  }

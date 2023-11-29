@@ -1,0 +1,38 @@
+@mixin spacings($type, $size, $breakpoint) {
+    @if $breakpoint == "sm" {
+      $value: 1rem;
+    } @else if $breakpoint == "normal" {
+      $value: 1.5rem;
+    } @else if $breakpoint == "md" {
+      $value: 2rem;
+    } @else if $breakpoint == "lg" {
+      $value: 2.5rem;
+    } @else if $breakpoint == "xl" {
+      $value: 3rem;
+    } @else if $breakpoint == "xxl" {
+      $value: 3.5rem;
+    }
+  
+    .@{type}-@{size}-@{breakpoint} {
+      $name: "@{type}-@{size}-@{breakpoint}";
+      $value: $value;
+  
+      & {
+        @if $type == "padding" {
+          padding: $value;
+        } @else if $type == "margin" {
+          margin: $value;
+        }
+      }
+    }
+  }
+  
+  @mixin spacings-inline($size, $breakpoint) {
+    @mixin spacings("inline", $size, $breakpoint);
+  }
+  
+  @mixin title-big() {
+    font-size: $font-size-h1;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
